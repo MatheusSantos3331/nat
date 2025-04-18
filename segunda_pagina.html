@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me dê uma chance</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8e0e0;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden; /* Evita barra de rolagem */
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff4d4d;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .yes-btn {
+            padding: 20px 40px;
+            font-size: 20px;
+            margin-top: 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: #28a745;
+            color: white;
+        }
+
+        .yes-btn:hover {
+            background-color: #218838;
+        }
+
+        .impossible-btn {
+            position: absolute;
+            padding: 20px 40px;
+            font-size: 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: not-allowed;
+            animation: move 2s infinite linear;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(45vw, 10vh); }
+            50% { transform: translate(5vw, 30vh); }
+            75% { transform: translate(-40vw, -40vh); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Nathalya, da uma chance para nós ?</h1>
+    <a href="https://wa.me/+5518996041145"><button class="yes-btn">SIM</button></a>
+    <button class="impossible-btn">NÃO</button>
+</body>
+</html>

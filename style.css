@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8e0e0;
+    overflow: hidden; /* Evita barra de rolagem */
+}
+
+.container {
+    text-align: center;
+}
+
+.romantic-btn {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 20px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.romantic-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.romantic-btn:focus {
+    outline: none;
+}
+
